@@ -1,0 +1,47 @@
+{
+  "$GMTileSet":"v1",
+  "%Name":"tl_level",
+  "autoTileSets":[
+    {"$GMAutoTileSet":"","%Name":"chao","closed_edge":false,"name":"chao","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[
+        19,20,21,22,23,24,25,26,52,53,54,55,56,57,58,59,85,86,87,88,89,90,91,92,118,119,120,121,122,123,124,
+        125,151,152,153,154,155,156,157,158,184,185,186,187,188,189,190,
+      ],},
+    {"$GMAutoTileSet":"","%Name":"fundo","closed_edge":false,"name":"fundo","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[
+        250,251,252,253,254,255,256,257,283,284,285,286,287,288,289,290,316,317,318,319,320,321,322,323,349,
+        350,351,352,353,354,355,356,382,383,384,385,386,387,388,389,415,416,417,418,419,420,421,
+      ],},
+  ],
+  "macroPageTiles":{
+    "SerialiseHeight":0,
+    "SerialiseWidth":0,
+    "TileSerialiseData":[],
+  },
+  "name":"tl_level",
+  "out_columns":22,
+  "out_tilehborder":2,
+  "out_tilevborder":2,
+  "parent":{
+    "name":"Conjuntos de tiles",
+    "path":"folders/Conjuntos de tiles.yy",
+  },
+  "resourceType":"GMTileSet",
+  "resourceVersion":"2.0",
+  "spriteId":{
+    "name":"spr_tileset",
+    "path":"sprites/spr_tileset/spr_tileset.yy",
+  },
+  "spriteNoExport":false,
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default",
+  },
+  "tileAnimationFrames":[],
+  "tileAnimationSpeed":15.0,
+  "tileHeight":16,
+  "tilehsep":0,
+  "tilevsep":0,
+  "tileWidth":16,
+  "tilexoff":0,
+  "tileyoff":0,
+  "tile_count":495,
+}
