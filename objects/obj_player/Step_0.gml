@@ -11,7 +11,6 @@ retorna_efeito_mola();
 //Rodando o meu estado
 estado();
 
-
 if(keyboard_check_pressed(ord("R"))){
     room_restart();
 }

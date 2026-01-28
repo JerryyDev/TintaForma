@@ -19,6 +19,7 @@ debug       = false;
 
 //Variaveis do level
 chao                   = false;
+chao_tinta             = false;
 teto                   = false;
 estou_na_tinta         = false;
 global.peguei_powerup  = false;
@@ -49,6 +50,9 @@ teto = place_meeting(x, y - 1, colisores);
 checa_chao = function()
 {
     chao = place_meeting(x, y + 1, colisores);
+    
+    var tile_tinta = layer_tilemap_get_id("tl_tinta");
+    chao_tinta = place_meeting(x, y+1, tile_tinta);
 }
 
 //Método para pegar inputs
@@ -257,7 +261,7 @@ estado_parado = function()
     //Se eu não estou na tina
     if(estou_na_tinta == false){
         //E eu apertei para entrar na tinta
-        if(tinta && global.peguei_powerup == true){
+        if(tinta && global.peguei_powerup == true && chao_tinta){
             //Eu mudo de estado
             estado = estado_entra_tinta;
             
@@ -386,7 +390,7 @@ estado_na_tinta = function(){
     
     //Zerando o velv
     velv = 0
-    
+    var tile_tinta = layer_tilemap_get_id("tl_level");
     var parar = !place_meeting(x + (velh * 18), y + 1, colisores);
     //Se não tem parede na minha esquerda ou na minha direita
     if(parar){
