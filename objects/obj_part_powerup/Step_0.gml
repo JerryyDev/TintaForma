@@ -1,12 +1,15 @@
 if(!alvo) exit;
     
+image_xscale = lerp(image_xscale, speed * 1, 0.1);
+image_angle = direction;
+
 if(voltar == false){
     speed -= 0.1;
     if(speed <= 0){
         voltar = true;
         
         var xx = alvo.x + random_range(-5, 5);
-        var yy = alvo.y - 12 + random_range(-8, 8);
+        var yy = alvo.y - 12 + random_range(-7, 7);
         var dir = point_direction(x, y, xx, yy);
         direction = dir;
     }
