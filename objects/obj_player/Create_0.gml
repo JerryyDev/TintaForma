@@ -21,6 +21,7 @@ debug       = false;
 chao                   = false;
 teto                   = false;
 estou_na_tinta         = false;
+global.peguei_powerup  = false;
 
 
 //Variavel de lista de colisoes
@@ -256,7 +257,7 @@ estado_parado = function()
     //Se eu não estou na tina
     if(estou_na_tinta == false){
         //E eu apertei para entrar na tinta
-        if(tinta){
+        if(tinta && global.peguei_powerup == true){
             //Eu mudo de estado
             estado = estado_entra_tinta;
             
@@ -286,6 +287,7 @@ estado_movendo = function()
     }
     
     if(place_meeting(x, y, obj_powerup)){
+        global.peguei_powerup = true;
         estado = estado_powerup_inicio;
     }
 }
